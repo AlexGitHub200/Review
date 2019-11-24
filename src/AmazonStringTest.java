@@ -7,6 +7,15 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+
+/*
+Ticket numbers need to be put in order:
+Fist the ones that after their first part (space) are alphanumeric --> sorted then with string natural order
+Then the ones that after their first part (space) are numbers  --> sorted then with number ordering
+
+ */
+
+
 public class AmazonStringTest {
 
     Comparator<String> comparator = (s1,s2)-> s1.length()-s2.length();
